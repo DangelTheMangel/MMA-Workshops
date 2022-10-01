@@ -1,17 +1,13 @@
 %% Delopgave 1
 %I denne delopgave skal vi anvende funktionen log_transform fra delopgave
 %1(iii)
-
+disp('Delopgave 1');
 A=dlmread('delopgave1.txt');
-subplot(1,3,1)
-imshow(A)
-title('imshow(A)')
-subplot(1,3,2)
-imshow(A,[])
-title('imshow(A,[])')
-subplot(1,3,3)
-imshow(log_transform(A,1/7))
-title('imshow(log\_transform(A,1/7))')
+subplot(1,3,1);imshow(A);title('imshow(A)');
+
+subplot(1,3,2);imshow(A,[]);title('imshow(A,[])');
+
+subplot(1,3,3);imshow(log_transform(A,1/7));title('log\_transform(A,1/7)');
 
 
 %% Delopgave 3
@@ -19,7 +15,7 @@ title('imshow(log\_transform(A,1/7))')
 %.m-filen resize_image.m. Først skal vi have loaded de billeder vi skal 
 %bruge. Disse er gemt som .txt dokumenter, men kan nemt hentes ind i
 %matlab ved at bruge funktionen dlread.
-
+disp('Delopgave 3');
 A=dlmread('delopgave3_1.txt');
 B=dlmread('delopgave3_2.txt');
 
